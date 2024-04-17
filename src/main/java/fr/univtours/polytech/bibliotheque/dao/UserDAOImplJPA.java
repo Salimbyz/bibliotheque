@@ -1,9 +1,4 @@
 package fr.univtours.polytech.bibliotheque.dao;
-
-<<<<<<< HEAD
-import java.util.List;
-
-=======
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,9 +6,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
-
->>>>>>> 6bfd74cda27c1e0355cb7ed5e15545754218a66e
 import fr.univtours.polytech.bibliotheque.model.UserBean;
 import jakarta.ejb.Stateless;
 
@@ -22,10 +14,7 @@ public class UserDAOImplJPA implements UserDAO {
 
     @Override
     public List<UserBean> getUserList() {
-<<<<<<< HEAD
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getUserList'");
-=======
+
         Statement st = null;
         ResultSet rs = null;
         Connection connection = null;
@@ -52,23 +41,11 @@ public class UserDAOImplJPA implements UserDAO {
             }
         }
         return userList;
->>>>>>> 6bfd74cda27c1e0355cb7ed5e15545754218a66e
     }
 
     @Override
     public void insertUser(UserBean user) {
-<<<<<<< HEAD
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'insertUser'");
-    }
 
-    @Override
-    public void updateUser(UserBean user) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'updateUser'");
-    }
-
-=======
         // On utilisera ici des PreparedStatement plutôt que des Statement pour des
         // raisons de sécurité.
         PreparedStatement st = null;
@@ -116,5 +93,4 @@ public class UserDAOImplJPA implements UserDAO {
             }
             return userList;
         }
->>>>>>> 6bfd74cda27c1e0355cb7ed5e15545754218a66e
 }

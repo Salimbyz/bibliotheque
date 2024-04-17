@@ -1,14 +1,10 @@
 package fr.univtours.polytech.bibliotheque.dao;
-
-<<<<<<< HEAD
-=======
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
->>>>>>> 6bfd74cda27c1e0355cb7ed5e15545754218a66e
 import java.util.List;
 
 import fr.univtours.polytech.bibliotheque.model.ArticleBean;
@@ -19,10 +15,6 @@ public class ArticleDAOImplJPA implements ArticleDAO {
 
     @Override
     public List<ArticleBean> getArticleList() {
-<<<<<<< HEAD
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getArticleList'");
-=======
         Statement st = null;
         ResultSet rs = null;
         Connection connection = null;
@@ -49,24 +41,10 @@ public class ArticleDAOImplJPA implements ArticleDAO {
             }
         }
         return articleList;
->>>>>>> 6bfd74cda27c1e0355cb7ed5e15545754218a66e
     }
 
     @Override
     public void insertArticle(ArticleBean article) {
-<<<<<<< HEAD
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'insertArticle'");
-    }
-
-    @Override
-    public void updateArticle(ArticleBean article) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'updateArticle'");
-    }
-
-}
-=======
         // On utilisera ici des PreparedStatement plutôt que des Statement pour des
         // raisons de sécurité.
         PreparedStatement st = null;
@@ -117,4 +95,4 @@ public class ArticleDAOImplJPA implements ArticleDAO {
         return articleList;
     }
 }
->>>>>>> 6bfd74cda27c1e0355cb7ed5e15545754218a66e
+
