@@ -1,5 +1,7 @@
 package fr.univtours.polytech.bibliotheque.business;
 
-public interface ArticleBusiness {
+import jakarta.inject.Inject;
 
+public interface ArticleBusiness {
+    
 }

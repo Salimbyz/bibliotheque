@@ -1,5 +1,10 @@
 package fr.univtours.polytech.bibliotheque.business;
 
-public class ArticleBusinessImpl {
+import fr.univtours.polytech.bibliotheque.dao.ArticleDAO;
+import jakarta.inject.Inject;
 
+public class ArticleBusinessImpl {
+    
+    @Inject
+    private ArticleDAO articleDao;
 }
