@@ -30,7 +30,6 @@ public class ConnectionServlet extends HttpServlet {
         boolean isAuthenticated = userBusiness.authenticate(username, password);
     
         if (isAuthenticated) {
-            // Rediriger vers la page listant les articles (PAGE2) si l'authentification est réussie
             response.sendRedirect("index.html");
         } else {
             // Si l'authentification échoue, afficher un message d'erreur sur PAGE1 et rester sur la même page
