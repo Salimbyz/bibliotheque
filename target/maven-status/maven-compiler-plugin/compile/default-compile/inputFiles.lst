@@ -1,5 +1,6 @@
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\business\UserBusinessImpl.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\JakartaRestConfiguration.java
+C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\model\CartItem.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\dao\ArticleDAOImplJPA.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\business\ArticleBusiness.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\business\UserBusiness.java
@@ -11,5 +12,7 @@ C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\model\UserBean.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\dao\UserDAO.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\dao\UserDAOImplJPA.java
+C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\business\CartBusinessImpl.java
+C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\business\CartBusiness.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\servlet\ConnectionServlet.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\dao\ConnectionDB.java

@@ -4,11 +4,14 @@ fr\univtours\polytech\bibliotheque\dao\ConnectionDB.class
 fr\univtours\polytech\bibliotheque\dao\UserDAO.class
 fr\univtours\polytech\bibliotheque\business\UserBusiness.class
 fr\univtours\polytech\bibliotheque\JakartaRestConfiguration.class
+fr\univtours\polytech\bibliotheque\model\CartItem.class
 fr\univtours\polytech\bibliotheque\servlet\ArticleServlet.class
 fr\univtours\polytech\bibliotheque\resources\JakartaEE10Resource.class
 fr\univtours\polytech\bibliotheque\business\ArticleBusiness.class
 fr\univtours\polytech\bibliotheque\business\ArticleBusinessImpl.class
 fr\univtours\polytech\bibliotheque\model\UserBean.class
+fr\univtours\polytech\bibliotheque\business\CartBusinessImpl.class
+fr\univtours\polytech\bibliotheque\business\CartBusiness.class
 fr\univtours\polytech\bibliotheque\dao\ArticleDAOImplJPA.class
 fr\univtours\polytech\bibliotheque\model\ArticleBean.class
 fr\univtours\polytech\bibliotheque\dao\ArticleDAO.class
