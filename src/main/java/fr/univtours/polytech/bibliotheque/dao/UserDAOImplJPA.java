@@ -1,4 +1,5 @@
 package fr.univtours.polytech.bibliotheque.dao;
+<<<<<<< HEAD
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -6,12 +7,21 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+=======
+
+import java.util.List;
+
+>>>>>>> 06bad009e12253de3b87ab91f2b8849a4af0aa7e
 import fr.univtours.polytech.bibliotheque.model.UserBean;
 import jakarta.ejb.Stateless;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.Query;
 
 @Stateless
 public class UserDAOImplJPA implements UserDAO {
 
+<<<<<<< HEAD
     @Override
     public List<UserBean> getUserList() {
 
@@ -19,15 +29,39 @@ public class UserDAOImplJPA implements UserDAO {
         ResultSet rs = null;
         Connection connection = null;
         List<UserBean> userList = null;
+=======
+   // L'objet EntityManager qui va permettre d'effectuer les requêtes en BDD.
+   @PersistenceContext(unitName = "bibliotheque")
+   private EntityManager em;
+>>>>>>> 06bad009e12253de3b87ab91f2b8849a4af0aa7e
 
+   @SuppressWarnings("unchecked") 
+   @Override
+   public List<UserBean> getUserList() {
+       // Exemple de requête HQL (ou JPAQL).
+       Query requete = em.createNativeQuery("select * from USER", UserBean.class);
+       return requete.getResultList();
+   }
+
+   @Override
+   public void updateUser(UserBean note) {
+       // TODO Auto-generated method stub
+   }
+
+   @Override
+   public void insertUser(UserBean user) {
+       // Insertion d'un enregistrement en BDD.
+       em.persist(user);
+   }
+
+   @Override
+    public String findByUsername(String username) {
+        Query query = em.createNativeQuery("SELECT password FROM USER WHERE login = :login");
+        query.setParameter("login", username);
         try {
-            // Lecture de la table NOTE :
-            final String sql = "SELECT login, name, password from boutique.USER;";
-            connection = ConnectionDB.createConnection();
-            st = connection.createStatement();
-            rs = st.executeQuery(sql);
-            userList = mapResultSetToList(rs);
+            return (String) query.getSingleResult();
         } catch (Exception e) {
+<<<<<<< HEAD
             // S'il y a eu un problème, on le fait remonter.
             throw new RuntimeException(e);
         } finally {
@@ -71,26 +105,9 @@ public class UserDAOImplJPA implements UserDAO {
                 // S'il y a eu un problème, on le fait remonter.
                 throw new RuntimeException(e);
             }
+=======
+            return null; // Gérer l'exception ou renvoyer null si aucun utilisateur n'est trouvé
+>>>>>>> 06bad009e12253de3b87ab91f2b8849a4af0aa7e
         }
     }
-
-        @Override
-        public void updateUser(UserBean user){
-    
-        }
-    
-        private final List<UserBean> mapResultSetToList(final ResultSet rs) throws SQLException {
-            List<UserBean> userList = new ArrayList<UserBean>();
-            while (rs.next()) {
-                // Pour chaque ligne de la table,
-                // on instancie un nouveau NoteBean.
-                final UserBean userBean = new UserBean();
-                userBean.setLogin(rs.getString("login")); // Il faut indiquer le nom du champ en BDD, ici, 'ID_NOTE'.
-                userBean.setName(rs.getString("name "));
-                userBean.setPassword(rs.getString("password"));
-                // On ajoute ce bean à la liste des résultats.
-                userList.add(userBean);
-            }
-            return userList;
-        }
 }
