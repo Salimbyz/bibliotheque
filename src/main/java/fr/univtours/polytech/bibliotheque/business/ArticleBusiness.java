@@ -1,7 +1,9 @@
 package fr.univtours.polytech.bibliotheque.business;
 
-import jakarta.inject.Inject;
+import java.util.List;
+
+import fr.univtours.polytech.bibliotheque.model.ArticleBean;
 
 public interface ArticleBusiness {
-    
+    public List<ArticleBean> getArticleList();
 }
