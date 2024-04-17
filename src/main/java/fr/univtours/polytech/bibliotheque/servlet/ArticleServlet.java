@@ -15,20 +15,5 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/articles")
-public class ArticleServlet extends HttpServlet {
-
-    private ArticleBusiness business;
-
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-       // Récupérer la liste des résultats
-       List<ArticleBean> ArticleList = business.getArticleList();
-       // Ajouter la liste des résultats à la requête
-       request.setAttribute("ARTICLE_LIST", ArticleList);
-
-       request.getRequestDispatcher("/articles.jsp").forward(request,response);
-    }
-
-    
-
+public class ArticleServlet extends HttpServlet {       
 }
