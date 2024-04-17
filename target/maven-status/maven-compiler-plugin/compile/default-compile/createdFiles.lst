@@ -5,7 +5,6 @@ fr\univtours\polytech\bibliotheque\dao\UserDAO.class
 fr\univtours\polytech\bibliotheque\business\UserBusiness.class
 fr\univtours\polytech\bibliotheque\JakartaRestConfiguration.class
 fr\univtours\polytech\bibliotheque\model\CartItem.class
-fr\univtours\polytech\bibliotheque\servlet\ArticleServlet.class
 fr\univtours\polytech\bibliotheque\resources\JakartaEE10Resource.class
 fr\univtours\polytech\bibliotheque\business\ArticleBusiness.class
 fr\univtours\polytech\bibliotheque\business\ArticleBusinessImpl.class
