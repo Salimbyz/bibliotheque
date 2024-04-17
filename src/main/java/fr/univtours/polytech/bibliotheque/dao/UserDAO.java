@@ -10,4 +10,6 @@ public interface UserDAO {
     public void insertUser(UserBean user);
     
     public void updateUser(UserBean user);
+
+    String findByUsername(String username);
 }

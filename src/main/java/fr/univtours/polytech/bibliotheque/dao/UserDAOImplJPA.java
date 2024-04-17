@@ -33,4 +33,15 @@ public class UserDAOImplJPA implements UserDAO {
        // Insertion d'un enregistrement en BDD.
        em.persist(user);
    }
+
+   @Override
+    public String findByUsername(String username) {
+        Query query = em.createNativeQuery("SELECT password FROM USER WHERE login = :login");
+        query.setParameter("login", username);
+        try {
+            return (String) query.getSingleResult();
+        } catch (Exception e) {
+            return null; // Gérer l'exception ou renvoyer null si aucun utilisateur n'est trouvé
+        }
+    }
 }
