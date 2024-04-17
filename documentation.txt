@@ -1,0 +1,5 @@
+notre projet ne remplis pas tout ce qui était demandé, voici la liste des choses manquantes :
+- si l'utilisateur n'est pas connecté il n'est pas redirigé vers /bibliotheque/connection automatiquement
+- les boutons + et - sont "cliquable" mais ne semble pas changer la quantité d'un article dans le panier
+- la quantité d'un article dans le panier ne s'affiche pas dans le /articles
+- la page /display-cart n'affiche pas correctement le panier
