@@ -80,19 +80,19 @@ public class ArticleDAOImplJPA implements ArticleDAO {
 
     }
 
-private final List<ArticleBean> mapResultSetToList(final ResultSet rs) throws SQLException {
-    List<ArticleBean> articleList = new ArrayList<ArticleBean>();
-    while (rs.next()) {
-        // Pour chaque ligne de la table,
-        // on instancie un nouveau NoteBean.
-        final ArticleBean articleBean = new ArticleBean();
-        articleBean.setId(rs.getInt("ID")); // Il faut indiquer le nom du champ en BDD, ici, 'ID_NOTE'.
-        articleBean.setName(rs.getString("NAME"));
-        articleBean.setPrice(rs.getFloat("PRIX"));
-        articleBean.setNbRestant(rs.getInt("NBRESTANT")));
-        // On ajoute ce bean à la liste des résultats.
-        articleList.add(articleBean);
+    private final List<ArticleBean> mapResultSetToList(final ResultSet rs) throws SQLException {
+        List<ArticleBean> articleList = new ArrayList<ArticleBean>();
+        while (rs.next()) {
+            // Pour chaque ligne de la table,
+            // on instancie un nouveau NoteBean.
+            final ArticleBean articleBean = new ArticleBean();
+            articleBean.setId(rs.getInt("ID")); // Il faut indiquer le nom du champ en BDD, ici, 'ID_NOTE'.
+            articleBean.setName(rs.getString("NAME"));
+            articleBean.setPrice(rs.getFloat("PRIX"));
+            articleBean.setNbRestant(rs.getInt("NBRESTANT"));
+            // On ajoute ce bean à la liste des résultats.
+            articleList.add(articleBean);
+        }
+        return articleList;
     }
-    return articleList;
-}
 }
