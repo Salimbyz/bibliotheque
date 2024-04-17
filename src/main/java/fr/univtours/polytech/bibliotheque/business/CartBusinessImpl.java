@@ -1,16 +1,16 @@
 package fr.univtours.polytech.bibliotheque.business;
 
-import java.util.ArrayList;
 import java.util.List;
+
 import fr.univtours.polytech.bibliotheque.model.ArticleBean;
 import fr.univtours.polytech.bibliotheque.model.CartItem;
+import jakarta.inject.Inject;
 
 public class CartBusinessImpl implements CartBusiness {
+
+    @Inject
     private List<CartItem> cartItems;
 
-    public CartBusinessImpl() {
-        this.cartItems = new ArrayList<>();
-    }
 
     @Override
     public void addItem(ArticleBean article, int quantity) {
