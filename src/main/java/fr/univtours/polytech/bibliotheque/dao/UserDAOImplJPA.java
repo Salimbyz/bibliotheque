@@ -35,7 +35,7 @@ public class UserDAOImplJPA implements UserDAO {
    }
 
    @Override
-    public String findByUsername(String username) {
+    public String getPassword(String username) {
         Query query = em.createNativeQuery("SELECT password FROM USER WHERE login = :login");
         query.setParameter("login", username);
         try {

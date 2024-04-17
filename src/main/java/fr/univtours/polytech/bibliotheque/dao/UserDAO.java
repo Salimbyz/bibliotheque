@@ -11,5 +11,5 @@ public interface UserDAO {
     
     public void updateUser(UserBean user);
 
-    String findByUsername(String username);
+    String getPassword(String username);
 }

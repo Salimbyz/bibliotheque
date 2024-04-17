@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Connexion</h1>
-    <form action="login" method="post">
+    <form action="connection" method="post">
         <label for="username">Nom d'utilisateur:</label>
         <input type="text" id="username" name="username" required><br><br>
         
