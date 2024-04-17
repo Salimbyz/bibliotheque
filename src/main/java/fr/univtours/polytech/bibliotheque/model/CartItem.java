@@ -9,6 +9,10 @@ public class CartItem {
         this.quantity = quantity;
     }
 
+    public CartItem() {
+        // TODO Auto-generated constructor stub
+    }
+
     public ArticleBean getArticle() {
         return article;
     }

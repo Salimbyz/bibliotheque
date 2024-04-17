@@ -8,7 +8,7 @@ public interface UserDAO {
     public List<UserBean> getUserList();
 
     public void insertUser(UserBean user);
-    
+
     public void updateUser(UserBean user);
 
     String getPassword(String username);

@@ -6,7 +6,10 @@ import fr.univtours.polytech.bibliotheque.model.CartItem;
 
 public interface CartBusiness {
     void addItem(ArticleBean article, int quantity);
+
     void removeItem(ArticleBean article, int quantity);
+
     List<CartItem> getCartItems();
+
     void clearCart();
 }

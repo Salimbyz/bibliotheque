@@ -5,7 +5,7 @@ import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
 
 @Stateless
-public class UserBusinessImpl implements UserBusiness{
+public class UserBusinessImpl implements UserBusiness {
 
     @Inject
     private UserDAO userDAO;

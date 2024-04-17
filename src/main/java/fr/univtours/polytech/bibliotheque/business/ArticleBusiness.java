@@ -6,4 +6,6 @@ import fr.univtours.polytech.bibliotheque.model.ArticleBean;
 
 public interface ArticleBusiness {
     public List<ArticleBean> getArticleList();
+
+    public ArticleBean getArticleById(int id);
 }

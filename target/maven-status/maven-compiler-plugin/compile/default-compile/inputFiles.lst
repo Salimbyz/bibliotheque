@@ -4,11 +4,14 @@ C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\dao\ArticleDAOImplJPA.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\business\ArticleBusiness.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\business\UserBusiness.java
+C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\servlet\PanierServlet.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\dao\ArticleDAO.java
+C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\servlet\CartServlet.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\resources\JakartaEE10Resource.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\servlet\ArticleServlet.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\business\ArticleBusinessImpl.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\model\ArticleBean.java
+C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\servlet\DisplayCartServlet.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\model\UserBean.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\dao\UserDAO.java
 C:\JEE\ws_archisi\bibliotheque\src\main\java\fr\univtours\polytech\bibliotheque\dao\UserDAOImplJPA.java

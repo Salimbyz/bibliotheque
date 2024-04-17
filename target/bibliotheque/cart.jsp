@@ -1,13 +1,16 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Panier</title>
 </head>
 <body>
-    <h1>Panier</h1>
+    <h1>Votre Panier</h1>
     <table border="1">
         <tr>
-            <th>Nom de l'article</th>
+            <th>Nom</th>
             <th>Prix</th>
             <th>Quantité</th>
         </tr>

@@ -20,16 +20,15 @@ public class PanierServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        this.cartBusiness = new CartBusinessImpl(); // Vous pouvez injecter cette dépendance si vous utilisez un conteneur d'inversion de contrôle comme CDI
+        this.cartBusiness = new CartBusinessImpl();
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         List<CartItem> cartItems = cartBusiness.getCartItems();
         request.setAttribute("cartItems", cartItems);
-        
-        // Ajoutez la variable 'item' au request
-        request.setAttribute("item", new CartItem()); // Remplacez new CartItem() par l'objet réel que vous souhaitez passer au JSP
 
+        request.setAttribute("item", new CartItem());
         RequestDispatcher dispatcher = request.getRequestDispatcher("panier.jsp");
         dispatcher.forward(request, response);
     }

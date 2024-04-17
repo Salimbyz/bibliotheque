@@ -17,27 +17,26 @@ public class ConnectionServlet extends HttpServlet {
     @Inject
     private UserBusiness userBusiness;
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         RequestDispatcher dispatcher = request.getRequestDispatcher("connection.jsp");
         dispatcher.forward(request, response);
     }
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-    
-        // Vérifier l'authentification de l'utilisateur
+
         boolean isAuthenticated = userBusiness.authenticate(username, password);
-    
+
         if (isAuthenticated) {
-            response.sendRedirect("index.html");
+            request.getSession().setAttribute("utilisateurConnecte", username);
+            response.sendRedirect("articles");
         } else {
-            // Si l'authentification échoue, afficher un message d'erreur sur PAGE1 et rester sur la même page
             request.setAttribute("error", "Le nom d'utilisateur ou le mot de passe saisi n'est pas valide.");
             RequestDispatcher dispatcher = request.getRequestDispatcher("connection.jsp");
             dispatcher.forward(request, response);
         }
     }
 }
-
-

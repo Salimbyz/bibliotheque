@@ -8,13 +8,19 @@ import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
 
 @Stateless
-public class ArticleBusinessImpl {
-    
+public class ArticleBusinessImpl implements ArticleBusiness {
+
     @Inject
     private ArticleDAO articleDao;
 
-    public List<ArticleBean> getArticleList(){
+    @Override
+    public List<ArticleBean> getArticleList() {
         List<ArticleBean> articles = articleDao.getArticleList();
         return articles;
+    }
+
+    @Override
+    public ArticleBean getArticleById(int id) {
+        return articleDao.getArticleById(id);
     }
 }
