@@ -17,15 +17,14 @@
         </tr>
         <c:forEach var="article" items="${ARTICLE_LIST}">
             <tr>
-                <td>${article.name}</td>
-                <td>${article.price}</td>
-                <td>${article.nbRestant}</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>${result.studentBean.id}</td>
+                <td>${result.noteBean.note}</td>
+                <td>${result.studentBean.firstName} ${result.studentBean.lastName}</td>
             </tr>
         </c:forEach>
     </table>
+    <c:if test="${not empty RESULTS_MEAN}">
+        <p>Moyenne: ${RESULTS_MEAN}</p>
+    </c:if>
 </body>
 </html>
